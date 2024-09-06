@@ -11,18 +11,30 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="overlay"></div>
-    <div class="content">
-        <!-- Seu conteúdo aqui -->
-        <h1>Bem-vindo(a)</h1>
-        <p>Em desenvolvimento.</p>
-    </div>
+    <main>
+      <div class="container">
+        <h1>Bora Maratonar com CineAI</h1>
+        <div class="search-section">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="search" id="search" placeholder="Digite o gênero" />
+        </div>
+        <div id="result">
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>
+        Web Site desenvolvido por
+        <a href="www.linkedin.com/in/yuridpaula">Yuri de Paula</a>
+      </p>
+    </footer>
+    <script type="module" src="./Assets/js/site.js"></script>
   </body>
-  <footer>
-    <p class="footer">
-      <!-- Desenvolvido por Yuri de Paula na Imersão Dev Alura + Google Gemini. -->
-    </p>
-  </footer>
 </html>

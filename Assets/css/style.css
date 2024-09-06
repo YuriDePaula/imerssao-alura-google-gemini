@@ -1,40 +1,153 @@
 * {
-    margin: 0;
-    padding: 0;
-    font: roboto;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  box-sizing: border-box;
+}
 
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('../img/bg.webp');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  /* Camada sobre a imagem para o efeito transparente */
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Ajuste a cor e a opacidade conforme necessário */
-    z-index: 1; /* Garante que a camada sobreponha a imagem de fundo */
-  }
-  
-  /* Estiliza o conteúdo para garantir que ele esteja acima da camada de sobreposição */
-  .content {
-    position: relative;
-    z-index: 2; /* Garante que o conteúdo esteja acima da camada de sobreposição */
-    color: #fff; /* Cor do texto para contraste com o fundo */
-    text-align: center;
-    padding: 20px;
-  }
-  
-  /* Adicione algum estilo para o conteúdo, se necessário */
-  h1, p {
-    margin: 0;
-  }
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #808080;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("../img/bg.webp");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  flex: 1;
+}
+
+main {
+  flex: 1;
+  color: #000;
+  position: relative;
+  z-index: 99999;
+  width: 80%;
+  height: 100%;
+  padding: 10% 5%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #555;
+  border-radius: 8px;
+  margin: auto auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.container {
+}
+
+h1 {
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+
+.search-section {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.search-section input#search {
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: background 0.55s ease;
+  -moz-transition: background 0.55s ease;
+  -ms-transition: background 0.55s ease;
+  -o-transition: background 0.55s ease;
+  transition: background 0.55s ease;
+}
+
+.search-section input#search::-webkit-input-placeholder {
+  color: #65737e;
+}
+.search-section input#search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #65737e;
+}
+.search-section input#search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #65737e;
+}
+.search-section input#search:-ms-input-placeholder {
+  color: #65737e;
+}
+
+.search-section .icon {
+  position: absolute;
+  top: 50%;
+  margin-left: 17px;
+  margin-top: 17px;
+  z-index: 1;
+  color: #4f5b66;
+}
+
+.search-section input#search:hover,
+.search-section input#search:focus,
+.search-section input#search:active {
+  outline: none;
+  background: #ffffff;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.4); /* Cor de fundo do rodapé */
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  z-index: 999;
+  border-top: 1px solid #555; /* Borda opcional */
+  border-radius: 8px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 800;
+}
+
+footer a:hover {
+  cursor: pointer;
+  color: #2b303b;
+}
+
+.movie-info {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 50px;
+}
