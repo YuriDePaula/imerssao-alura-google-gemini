@@ -1,4 +1,4 @@
-export const items = [
+export const data = [
   {
     "adult": false,
     "backdrop_path": "/hxSB02ksqnkXY4hPGAXqgO2fL01.jpg",
